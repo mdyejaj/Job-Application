@@ -19,3 +19,58 @@ body{
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
     border-radius: 10px;
 }
+.form-container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input, select, textarea{
+    padding: 6px 10px;
+    border: 2.5px solid #ff0000;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input,select, textarea:focus{
+    outline-color: #FFD700;
+}
+.button-container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    font-size: 25px;
+}
+button{
+    background-color: #ff0000;
+    border: transparent solid 2px;
+    padding:  5px 10px;
+    color: #fff;
+    border-radius: px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color:#FFD700;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.text-area-control{
+    grid-column: 1 / span 2;
+}
+.text-area-control textarea{
+    width: 100%;
+}
+@media (max-460px){
+    .text-area-control{
+        grid-column: 1 / span 1;
+    }
+}
