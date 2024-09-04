@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: darkgray;
+    background-color: #Ffffff;
 }
 .container{
     max-width: 900px;
@@ -13,7 +13,7 @@ body{
 .apply-box{
     max-width: 600px;
     padding: 20px;
-    background-color: blue;
+    background-color: #778899;
     margin: 0 auto;
     margin-top: 50px;
     box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
